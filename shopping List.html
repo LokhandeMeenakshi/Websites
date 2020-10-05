@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     <style>
+         div{
+             width : 240px;
+             background-color: lightskyblue;
+             margin: 0px;
+             padding: 3px;
+
+         }
+         header{
+             background-color:mediumblue;
+             padding: 12px;
+             margin: 0px;
+             
+             color: white;
+             font-size: 25px;
+             
+         }
+         .errortext{
+             color: red;
+         }
+         li{
+             text-align: left;
+             font-size: 20px;
+             padding: 16px;
+             
+             margin-right:right;
+         }
+         input{
+             text-align: center;
+             font-size: 15px;
+         }
+         button{
+             color: white;
+             font-size: 15px;
+         }
+         
+     </style>
+</head>
+
+   <body>
+       <div ng-app="myShopping" ng-controller="myCtrl">
+           <header>
+               <h3>My shopping list</h3>
+           </header>
+           <ol>
+          <li  ng-repeat="x in products">{{x}}<span style="cursor: pointer;" ng-click="removeItem($index)"> &times; </span></li>
+          </ol> 
+          <input ng-model="addMe" placeholder="Add shopping items here">
+          <button  style="background-color:mediumblue;"
+          ng-click="addItem()">Add</button>
+          <p style="color:red;">{{errortext}}</p>
+          
+        </div>
+       
+       <script>
+           var app = angular.module('myShopping',[]);
+           app.controller('myCtrl',function($scope){
+               $scope.products=['Milk','Bread','Cheese'];
+               $scope.addItem = function(){
+                   $scope.errortext= "" ;
+                   if(!$scope.addMe) {return;}
+                   if($scope.products.indexOf($scope.addMe)==-1){
+                   $scope.products.push($scope.addMe);
+               } else {
+                   $scope.errortext="The item is already in your list.";
+               }
+               }
+               $scope.removeItem=function(x) {
+                   $scope.errortext= "";
+                   $scope.products.splice(x,1);
+               }
+               });
+       </script>
+   </body>
+   
+   
+</html>

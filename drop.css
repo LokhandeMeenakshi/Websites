@@ -1,0 +1,53 @@
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+      display: none;
+      box-shadow: 0px 4px 5px 2px black;
+      position: absolute;
+     
+  }
+  .dropdownclick{
+     background-color: rgb(106, 167, 15);
+     padding: 8px 18px;
+     color:white;
+  }
+  .dropdown:hover .dropdown-content{
+     
+      display: block;
+  }
+  .dropdown:hover .dropdownclick{
+     background-color: rgb(72, 112, 12);
+  }
+  a{
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 8px 16px;
+  }
+  a:hover{
+      background-color: gray;
+  }
+
+
+
+
+
+ .drop-content1{
+     display: none;
+     position: relative;
+     box-shadow: 1px 1px 1px 1px red;
+     padding: 3px 35px;
+     background-color: palegreen;
+     z-index: 1;
+ }
+ .demo{
+     display: inline-block;
+     position:relative;
+
+ }
+ .demo:hover .drop-content1{
+     display: block;
+ }

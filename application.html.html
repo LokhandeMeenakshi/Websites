@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: orange; 
+            font-style:italic;
+            margin:12px;
+            width: 350px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        
+    </style>
+</head>
+<div>
+    <form>
+        <label for="username"> username  </label>
+        <input type="text" id="username">
+    <br>
+        <label for="password">password</label>
+        <input type="password" id="password">
+        <br>
+        <input type="submit" value="submit">
+     </form>
+</div>
+<!--table form to arrange in properv formate-->
+<div>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>username</label>
+                </td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>password</label>
+                </td>
+                <td>
+                    <input type:"text">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<div>
+<!--select option-->
+<label>select a languege</label>
+<select>
+    <option>html</option>
+    <option>CSS</option>
+    <option>A JS</option>
+    <option>jquerry</option>
+    <option>javaScript</option>
+    <option>bootstrap</option>
+
+</select>
+</form>
+</div>
+<!--text area -->
+<div>
+    <form>
+        <label>Enter your message</label>
+        <textarea rows=9 cols="20"></textarea>
+    </form>
+</div>
+<!--datalist -->
+<div>
+    <form>
+        <label>select</label>
+        <input list="language" name="tech">
+        <datalist id="language" >
+            <option value="html"></option>
+            <option value="jss"></option>
+            <option value="aws"></option>
+            <option value="jquerry"></option>
+        </datalist>
+        <input type="submit" value="submit">
+    </form>
+</div>
+
+
+
+
+</html>
+    

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                form{
+                    border: 3px solid  #ccc;
+                    margin: 5% auto 15% auto;
+                    width: 75%;
+                    padding: 10px;
+                    background-color: lightblue;
+                   
+                }
+                .image{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
+                
+              
+               input[type="text"],input[type="password"]{
+                   padding: 12px 20px;
+                   width: 100%;
+                   
+                   border: 1px solid lightgrey;
+                  
+                   box-sizing: border-box;
+                   
+               }
+               
+            
+               label{
+                   font-size: 25px;
+                  
+                   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               }
+               
+              
+               button{
+                   padding: 5px 12px;
+                   font-size: 20px;
+                   width: 100%;
+                   background-color: gray;
+                
+               }
+               .btn{
+                 
+                   width: auto;
+                   background-color: red;
+               }
+               button:hover{
+                     background-color: darkslategray;
+                     color: white;
+               }
+              
+             .container{
+                    margin: 3px;
+                    width: auto;
+                    padding: 16px;
+                    background-color: #ccc;
+                   
+             }
+             .modal {
+                 display: none; /* Hidden by default */
+                 position: fixed; /* Stay in place */
+                 z-index: 1; /* Sit on top */
+                 left: 0;
+                 top: 0;
+                 width: 100%; /* Full width */
+                 height: 100%; /* Full height */
+                 overflow: auto; /* Enable scroll if needed */
+                 padding-top: 60px;
+}           
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+              .close{
+                   position:fixed;
+                   right: 200px;
+                   top: 150px;
+                   color:#000;
+                   font-size: 35px;
+                   font-weight: bold;
+              }
+          
+.close:hover,.close:focus {
+  color: red;
+  cursor: pointer;
+}
+    </style>
+
+
+</head>
+<body>
+    <h2>Modal login form </h2>
+    <button onclick="document.getElementById('main').style.display='block'"
+     style="width:auto;">Login</button>
+    
+  
+    <div id="main" class="modal">
+       <form class="modal-content animate" >
+           <div>
+            <span onclick="document.getElementById('main').style.display='none'"
+            class="close" title="Close Modal">&times;</span>
+            <img src="https://cdn0.iconfinder.com/data/icons/photography-flat-4/32/photography_user_interface_ui_profile_human_account-512.png" class="image" alt="person" size=35><br>
+           </div>
+            <div>
+                <label><b>User name</b></label><br>
+                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+                <label><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" name="pwd" required><br><br>
+                <button type="submit" ><b>Login</b></button><br>
+                <label><input type="checkbox">Remember me</label>
+            </div>
+    
+        <div class="container" style=" border: 2px solid  #ccc;">
+        
+        <button type="button" class="btn" onclick="document.getElementById('main').style.display='none'">Cancle</button>
+        <span class="pwd" text-align="right">Forgot <a href="#">password?</a></span>
+    </div>
+</div>
+       </form> 
+         
+           
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('main');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>

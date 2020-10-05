@@ -1,0 +1,20 @@
+text-decoration--- to remove under line
+list-style type--to remove dots
+to take all at one side corner -- body{ margin:0; <!--padding=0-->}
+to disply redio button -- name should required but not for check box
+.hover-- after click on text it should dislpy diffrnt color (="color"),box shadow
+display:inlne block; --to display indual block
+--------------JavaScript------------------------------------------------------------------------------
+*A computer program is a list of "instructions" to be "executed" by a computer.
+*A JavaScript program is a list of programming statements.
+to display html element "<p id="demo" style="display:none">hellooooo.</p>"
+use an external script--- <script src="myScript.js"></script> bt these extrl scripts can not contain <script> tags
+id--html element
+innerHTML--html content 
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+*Strings are text, written within double or single quotes:
+----------------
+HTML-define content of web page
+CSS- specify layout of web pages
+JavaScript-the behavior of web pages
+

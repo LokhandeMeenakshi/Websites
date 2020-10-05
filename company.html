@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header ,footer{
+            background-color: forestgreen;
+            padding: 5px;
+            font-size: 20px;
+            text-align:center ;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        nav{
+            background-color: greenyellow;
+            padding: 15px;
+            overflow: hidden;
+            display: block;
+            
+        }
+         nav ul li{
+            list-style-type: none;
+            
+            float: left;
+            padding: 3px;
+            font-size: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+        
+            display:inline-block;
+        }
+      nav ul li  a:hover{
+            background-color:lightpink;
+            border-radius: 5px;
+        }
+    nav ul li  a.active{
+            background-color: hotpink;
+            border-radius: 5px;
+        }
+        aside{
+            background-color:yellow;
+            overflow: hidden;
+            float: left;
+            text-align: center;
+            width: 200px;
+            height: 300px;
+           overflow-y: scroll;
+            
+        }
+        aside ul li a{
+            padding: 15px 25px;
+            display:block;
+            
+        }
+        aside ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style-type: none;
+            
+        }
+        a:hover{
+            background-color: tomato;
+            border-radius: 5px;
+        }
+        
+        ul li a{
+            text-decoration: none;
+           
+        }
+        article{
+            background-color: tomato;
+            border-radius: 5px;
+            padding: 10px;
+        }
+       article h1 {
+            
+            padding: 5px;
+            overflow: hidden;
+            margin: 0;
+        }
+        details{
+            background-color: brown;
+            padding: 5px;
+            margin: 5px;
+            overflow: hidden;
+        }
+footer{
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <main>
+            <h1>UiBrains Technologies</h1> 
+        <p>The smart way of learning</p>
+        </main>
+    </header>
+    <!---nav-->
+    <div>
+    <nav>
+        <ul>
+            <li>
+                <a href="#Active" class="active">Home</a>
+            </li>
+            <li>
+                <a href="#About">About</a>
+            </li>
+            <li>
+                <a href="#Contact">Contact </a>
+            </li>
+            <li>
+                <a href="#Career">Career</a>
+            </li>
+            <li>
+                <a href="#Course">Courses</a>
+            </li>
+        </ul>
+        </nav>
+    </nav>
+    <!--aside-->
+    <aside>
+        <ul>
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">CSS</a>
+            </li>
+            <li>
+                <a href="#">JavaScript</a>
+            </li>
+            <li>
+                <a href="#">JQuerry</a>
+            </li>
+            <li>
+                <a href="#">AJAX</a>
+            </li>
+            <li>
+                <a href="#">BootStap</a>
+            </li>
+            <li>
+                <a href="#">Angular Js</a>
+            </li>
+            <li>
+                <a href="#">JSON</a>
+            </li>
+            <li>
+                <a href="#">VScode</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!--Detail and summary-->
+    <section>
+    <details>
+        <summary>HTML</summary>
+        <article>
+            <h1>HTML</h1>
+            <p>HTML is the standard markup language for Web pages.
+
+                With HTML you can create your own Website.
+                
+                HTML is easy to learn - You will enjoy it!</p>
+        </article>
+    </details>
+    </section>  
+    <section>
+        <details>
+            <summary>CSS</summary>
+            <article>
+                <h1>CSS</h1>
+                <p>CSS stands for Cascading Style Sheets
+                    CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+                    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                    External stylesheets are stored in CSS files</p>
+            </article>
+        </details>
+        </section>  
+        <section>
+            <details>
+                <summary>JavaScript</summary>
+                <article>
+                    <h1>JavaScript</h1>
+                    <p>JavaScript is the programming language of HTML and the Web.
+
+                        JavaScript is easy to learn.
+                        
+                        This tutorial will teach you JavaScript from basic to advanced.</p>
+                </article>
+            </details>
+            </section>  
+            <section>
+                <details>
+                    <summary>JQuerry</summary>
+                    <article>
+                        <h1>JQuerry</h1>
+                        <p>jQuery is a JavaScript library designed to simplify HTML DOM
+                             tree traversal and manipulation, 
+                            as well as event handling, CSS animation</p>
+                    </article>
+                </details>
+                </section>  
+                <section>
+                    <details>
+                        <summary>AZAX</summary>
+                        <article>
+                            <h1>AZAX</h1>
+                            <p>Update a web page without reloading the page
+                                Request data from a server - after the page has loaded
+                                Receive data from a server - after the page has loaded
+                                Send data to a server - in the background</p>
+                        </article>
+                    </details>
+                    </section> 
+                    <section>
+                        <details>
+                            <summary>BootStrap</summary>
+                            <article>
+                                <h1>BootStrap</h1>
+                                <p>Bootstrap is the most popular HTML, CSS, and JavaScript 
+                                    framework for developing responsive, mobile-first websites.</p>
+                            </article>
+                        </details>
+                        </section> 
+                        <section>
+                            <details>
+                                <summary>Angular Js</summary>
+                                <article>
+                                    <h1>Angular Js</h1>
+                                    <p>AngularJS extends HTML with new attributes.
+
+                                        AngularJS is perfect for Single Page Applications (SPAs).
+                                        
+                                        AngularJS is easy to learn.</p>
+                                </article>
+                            </details>
+                            </section> 
+                            <section>
+                                <details>
+                                    <summary>JSON</summary>
+                                    <article>
+                                        <h1>JSON</h1>
+                                        <p>JSON: JavaScript Object Notation.
+
+                                            JSON is a syntax for storing and exchanging data.
+                                            
+                                            JSON is text, written with JavaScript object notation.</p>
+                                    </article>
+                                </details>
+                                </section> 
+                                <section>
+                                    <details>
+                                        <summary>VScode</summary>
+                                        <article>
+                                            <h1>VScode</h1>
+                                            <p>Visual Studio Code is a source code editor that 
+                                                can be used with a variety of programming languages,
+                                                 including Java, JavaScript, Go, Node.js and C++. Instead 
+                                                 of a project system it allows users to open one or more
+                                                  directories, which can then be saved in workspaces for 
+                                                  future reuse</p>
+                                        </article>
+                                    </details>
+                                    </section> 
+      <footer>
+          <h1>Copyright &copy; UiBrains Technologies</h1>
+          <p>All rights resevered</p>
+          <p>developed and maintained by Meenakshi Lokahnde</p>
+      </footer>                              
+                    
+                
+        
+
+</body>
+</html>
